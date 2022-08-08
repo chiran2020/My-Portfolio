@@ -7,3 +7,13 @@ $medium-color: #ccc;
 $dark-color: #333;
 // $bg-image: url("../dist/img/showcase.jpg");
 $bg-image: url("../img/showcase.jpg");
+
+// set text color
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
