@@ -63,3 +63,69 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+
+
+// {
+//   const ti = document.querySelector('.name');
+
+//   const uu = ti.innerText = "Hi"
+//   ti.value = uu;
+// }
+
+// Email 
+
+function validate() {
+
+  let name = document.querySelector('.name');
+  let email = document.querySelector('.email');
+  let msg = document.querySelector('.message');
+  let subject = document.querySelector('.subject');
+  let phone = document.querySelector('.phone');
+
+  let sendBtn = document.querySelector('.send-btn');
+
+  sendBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (name.value == "" || email.value == "" || msg.value == "" || subject.value == "" || phone.value == "") {
+
+
+      emptyerror();
+    } else {
+
+      sendmail(name.value, email.value, msg.value, subject.value, phone.value);
+      success();
+    }
+  });
+}
+
+validate()
+
+
+function sendmail(name, email, msg, subject, phone) {
+  emailjs.send("service_agu5839", "template_9m9l0ml", {
+    from_name: email,
+    to_name: name,
+    message: msg,
+    subject: subject,
+    phone: phone
+  });
+}
+
+function emptyerror() {
+  swal({
+    title: "Oh No..!",
+    text: "Fields cannot be empty!",
+    icon: "error",
+  });
+}
+
+function success() {
+  swal({
+    title: "Email Sent Successfully!",
+    text: "We Will Relpy in 24 Hours!",
+    icon: "success",
+  });
+}
+
+

@@ -5,8 +5,7 @@
   overflow: hidden;
 }
 
-// buttons
-
+// Buttons
 %btn-shared {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -21,11 +20,13 @@
     color: #333;
     background-color: $main-color;
   }
+
   &-light {
     @extend %btn-shared;
     color: #333;
     background-color: $light-color;
   }
+
   &-dark {
     @extend %btn-shared;
     color: #f4f4f4;
@@ -33,13 +34,13 @@
   }
 }
 
-button[class^="btn-"]:hover,
-a[class^="btn-"]:hover,
-input[class^="btn-"]:hover {
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
   background-color: $main-color;
 }
 
-// background
+// Backgrounds
 .bg {
   &-main {
     background: $main-color;
@@ -68,7 +69,7 @@ input[class^="btn-"]:hover {
   text-align: center;
 }
 
-// padding
+// Padding
 .py {
   &-1 {
     padding: 1rem 0;
@@ -84,7 +85,7 @@ input[class^="btn-"]:hover {
   }
 }
 
-// margin
+// Margin
 .my {
   &-1 {
     margin: 1rem 0;

@@ -1,14 +1,14 @@
 {
-  "name": "portfolio-website-i-coded",
+  "name": "portfolio_website",
   "version": "1.0.0",
-  "description": "portfolio website",
+  "description": "Portfolio website",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
-  "author": "Chiran",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^4.11.0"
   }
 }

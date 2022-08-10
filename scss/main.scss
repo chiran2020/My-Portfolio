@@ -1,8 +1,8 @@
 @import "config";
-
 @import "utilities";
+@import "item_grid";
 
-// General Style
+// General Styles
 * {
   margin: 0;
   padding: 0;
@@ -74,7 +74,6 @@ img {
 }
 
 // Header
-
 #header {
   // Header Home
   &-home {
@@ -82,7 +81,7 @@ img {
     height: 100vh;
     color: #fff;
 
-    // Header content
+    // Header Content
     .header-content {
       text-align: center;
       padding-top: 20%;
@@ -94,6 +93,7 @@ img {
     }
   }
 
+  // Header Inner
   &-inner {
     background: $bg-image no-repeat 20% 30% / cover;
     height: 5.5rem;
@@ -101,8 +101,9 @@ img {
   }
 }
 
-// Home Section A
+// Home Sections
 #home {
+  // Home Section A
   &-a {
     .specials {
       margin-top: 3rem;
@@ -117,7 +118,7 @@ img {
     }
   }
 
-  // Home section B
+  // Home Section B
   &-b {
     .stats {
       display: grid;
@@ -142,6 +143,7 @@ img {
         &:nth-child(odd) {
           background: $light-color;
         }
+
         &:nth-child(even) {
           background: $medium-color;
         }
@@ -150,13 +152,13 @@ img {
   }
 
   // Home Section C
-
   &-c {
     .process {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 1.5rem;
       text-align: center;
+
       // process-step
       &-step {
         position: absolute;
@@ -172,11 +174,11 @@ img {
         padding: 1rem;
         transition: all 1s;
       }
+
       // process-icon
       &-icon {
         border-radius: 50%;
         background: $dark-color;
-        // color: #fff;
         color: set-text-color($dark-color);
         padding: 2rem;
         width: 70px;
@@ -194,7 +196,7 @@ img {
 
           .process-step {
             background: $dark-color;
-            color: set-text-color($main-color);
+            color: set-text-color($dark-color);
           }
         }
       }
@@ -202,8 +204,7 @@ img {
   }
 }
 
-// About Section
-
+// About Sections
 #about {
   // About A
   &-a {
@@ -229,9 +230,11 @@ img {
     .award-1 {
       grid-area: aw1;
     }
+
     .award-2 {
       grid-area: aw2;
     }
+
     .award-3 {
       grid-area: aw3;
     }
@@ -243,7 +246,6 @@ img {
       margin: 1rem;
     }
   }
-
   // About B
   &-b {
     .progress {
@@ -251,7 +253,7 @@ img {
       height: 20px;
       background: $medium-color;
       border-radius: 5px;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.6rem;
 
       div {
         height: 100%;
@@ -261,7 +263,6 @@ img {
       }
     }
   }
-
   // About C
   &-c {
     .about-logos {
@@ -270,13 +271,11 @@ img {
       grid-gap: 2rem;
 
       img {
-        width: 70&;
+        width: 70%;
       }
     }
   }
-
   // About D
-
   &-d {
     .testimonials {
       display: grid;
@@ -306,8 +305,63 @@ img {
   }
 }
 
-// Footer
+// Contact Page
+#contact {
+  &-a {
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        "name email"
+        "subject phone"
+        "message message";
+      grid-gap: 1.2rem;
+      margin-bottom: 1.2rem;
 
+      // Grid Areas
+      .name-input {
+        grid-area: name;
+      }
+      .subject-input {
+        grid-area: subject;
+      }
+      .email-input {
+        grid-area: email;
+      }
+      .phone-input {
+        grid-area: phone;
+      }
+      .message-input {
+        grid-area: message;
+        height: 100px;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    button[type="submit"] {
+      width: 50%;
+    }
+  }
+
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+
+  &-c {
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+    }
+  }
+}
+
+// Footer
 #main-footer {
   background: $dark-color;
   color: #fff;
@@ -331,12 +385,10 @@ img {
 
       &:hover {
         background: $main-color;
-        cursor: pointer;
       }
     }
   }
 }
 
-// .header-content .txt-type {
-//   color: $main-color;
-// }
+// Import Media Queries
+@import "media";
