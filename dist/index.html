@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/main.css" />
+
+  <link rel="icon" href="/favicon/favicon_io/favicon.ico">
   <title>Chiran | Web Developer</title>
 </head>
 
@@ -17,7 +19,8 @@
   <header id="header-home">
     <div class="container">
       <nav id="main-nav">
-        <img src="img/logo.png" alt="My portfolio" id="logo">
+        <h1 id="logo">C . A</h1>
+        <!-- <img src="img/logo.png" alt="My portfolio" id="logo"> -->
         <ul>
           <li><a href="index.html" class="current">HOME</a></li>
           <li><a href="about.html">About</a></li>
@@ -28,12 +31,14 @@
       <div class="header-content">
         <h1>
           I Am Chiran The
-          <span class="txt-type" data-wait="3000" data-words='["Developer" , "Designer" ,"Student"]'>
+          <span class="txt-type" data-wait="3000" data-words='["Developer" ,"Student"]'>
 
           </span>
         </h1>
-        <p class="lead">I Specialize In Web Wevlopement, Front-End Devlope and Photography</p>
-        <a href="work.html" class="btn-light">View My Work</a>
+        <!-- <p class="lead">I Specialize In Front-End and Web Wevlopement.</p> -->
+        <div class="view-workbtn">
+          <a href="work.html" class="btn-light">View My Work</a>
+        </div>
       </div>
     </div>
   </header>
@@ -44,10 +49,10 @@
       <h2 class="section-title">I Specialize In</h2>
       <div class="bottom-line"></div>
       <p class="lead">
-        Photography as well as creating digital masterpices and UI/UX layouts for websites and mobile applications
+        I Specialize In Front-End and Web Wevlopement.
       </p>
 
-      <div class="specials">
+      <!-- <div class="specials">
         <div>
           <i class="fas fa-file-alt fa-2x"></i>
           <h3>Concepting</h3>
@@ -84,7 +89,7 @@
             aliquam numquam quidem.
           </p>
         </div>
-      </div>
+      </div> -->
     </div>
 
   </section>
@@ -93,11 +98,13 @@
   <section id="home-b" class="text-center py2">
     <div class="stats">
       <div>
+
         <ul>
           <li><i class="fas fa-users fa-3x"></i></li>
-          <li class="stats-title">Clients</li>
-          <li class="stats-number">100</li>
+          <li class="stats-title">Events Attended</li>
+          <li class="stats-number">10</li>
         </ul>
+
       </div>
       <div>
         <ul>
@@ -110,15 +117,17 @@
         <ul>
           <li><i class="fas fa-hourglass-start fa-3x"></i></li>
           <li class="stats-title">Hours Worked</li>
-          <li class="stats-number">3500</li>
+          <li class="stats-number">10,00</li>
         </ul>
       </div>
       <div>
-        <ul>
-          <li><i class="fas fa-code-branch fa-3x"></i></li>
-          <li class="stats-title">Project Compleated</li>
-          <li class="stats-number">5</li>
-        </ul>
+        <a target="_blank" href="https://bit.ly/3QyEgc5">
+          <ul>
+            <li><i class="fas fa-code-branch fa-3x"></i></li>
+            <li class="stats-title">Project Compleated</li>
+            <li class="stats-number">6</li>
+          </ul>
+        </a>
       </div>
     </div>
   </section>
@@ -131,7 +140,7 @@
       </h2>
       <div class="bottom-line"></div>
       <p class="lead">
-        All of my UI/UX and projects are based off of a practiced formula to get the result that i am looking for
+        All of my projects are based off of a practiced formula to get the result that i am looking for
       </p>
       <div class="process">
         <div>
@@ -140,8 +149,7 @@
           </i>
           <div class="clr"></div>
           <h3>Discuss The Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum magnam, nisi repellendus sequi
-            mollitia.</p>
+          <p>Before I start the project, I like to talk about my project with mentors and get their fedback.</p>
         </div>
         <div>
           <i class="fas fa-desktop fa-4x process-icon my-2">
@@ -149,8 +157,7 @@
           </i>
 
           <h3>Brainstorming ^ Concept</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum magnam, nisi repellendus sequi
-            mollitia.</p>
+          <p>I Like To Think About The Structure Of The Project And How I Would Lay Out Each Section.</p>
         </div>
         <div>
           <i class="fas fa-object-ungroup fa-4x process-icon my-2">
@@ -158,16 +165,15 @@
           </i>
 
           <h3>UI/UX Planning</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum magnam, nisi repellendus sequi
-            mollitia.</p>
+          <p>At This Point, I Will Design And Make A Project Mock-Up.</p>
         </div>
         <div>
           <i class="fas fa-thumbs-up fa-4x process-icon my-2">
             <div class="process-step">4</div>
           </i>
           <h3>Interaction</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum magnam, nisi repellendus sequi
-            mollitia.</p>
+          <p>Finally, As I Code. I Stay In Touch With Mentors And Let Them Know Where I Am At And Listen To Suggestions.
+          </p>
         </div>
       </div>
     </div>
@@ -181,9 +187,10 @@
 
       <div class="social">
         <!-- <i class="fab fa-twitter"></i> -->
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
+        <!-- <i class="fab fa-facebook"></i> -->
+        <!-- <i class="fab fa-instagram"></i> -->
+        <a target="_blank" href="https://bit.ly/3vWEm5q"> <i class="fab fa-github"></i></a>
+        <a target="_blank" href=" https://bit.ly/3QBOnNp"> <i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   </footer>

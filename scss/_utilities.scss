@@ -34,9 +34,9 @@
   }
 }
 
-button[class^='btn-']:hover,
-a[class^='btn-']:hover,
-input[class^='btn-']:hover {
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
   background-color: $main-color;
 }
 

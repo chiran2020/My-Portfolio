@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Mr De Haviland
+- Font Author: Copyright (c) 2006 Alejandro Paul (sudtipos@sudtipos.com), with Reserved Font Name "Mr De Haviland"
+- Font Source: http://fonts.gstatic.com/s/mrdehaviland/v14/OpNVnooIhJj96FdB73296ksbOj3C4ULVNTlB.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

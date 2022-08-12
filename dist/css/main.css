@@ -23,9 +23,9 @@
   color: #f4f4f4;
   background-color: #333; }
 
-button[class^='btn-']:hover,
-a[class^='btn-']:hover,
-input[class^='btn-']:hover {
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
   background-color: #ffbc00; }
 
 .bg-main {
@@ -188,10 +188,15 @@ img {
   width: 100%; }
 
 #logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
   width: 70px;
   height: 70px;
   color: #fff;
   text-transform: uppercase; }
+
+.header-content .txt-type {
+  color: #ffbc00; }
 
 #main-nav {
   display: flex;
@@ -338,7 +343,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem; }
   #about-c .about-logos img {
-    width: 70%; }
+    width: 100%; }
 
 #about-d .testimonials {
   display: grid;
@@ -410,6 +415,18 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00; }
+
+.view-workbtn a {
+  display: inline-block;
+  margin-top: 30px;
+  border: 1px #333 solid;
+  border-radius: 10px; }
+
+.social a {
+  color: #fff; }
+
+.about-logos img.sec-pic {
+  margin-top: 20px; }
 
 @media (max-width: 800px) {
   #header-home {

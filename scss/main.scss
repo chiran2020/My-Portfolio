@@ -35,10 +35,19 @@ img {
 
 // Logo
 #logo {
+  // font-family: Brush Script;
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
   width: 70px;
   height: 70px;
   color: #fff;
   text-transform: uppercase;
+}
+
+// change color of job title
+
+.header-content .txt-type {
+  color: $main-color;
 }
 
 // Main Nav
@@ -271,7 +280,7 @@ img {
       grid-gap: 2rem;
 
       img {
-        width: 70%;
+        width: 100%;
       }
     }
   }
@@ -388,6 +397,27 @@ img {
       }
     }
   }
+}
+
+//  Other edits
+
+.view-workbtn a {
+  display: inline-block;
+  margin-top: 30px;
+  border: 1px #333 solid;
+  border-radius: 10px;
+}
+
+.social a {
+  color: #fff;
+}
+
+// .about-logos img {
+//   background-color: #f4f4f4;
+// }
+
+.about-logos img.sec-pic {
+  margin-top: 20px;
 }
 
 // Import Media Queries
