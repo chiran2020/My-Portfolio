@@ -408,17 +408,40 @@ img {
   border-radius: 10px;
 }
 
-.social a {
-  color: #fff;
+.about-info .my-pic {
+  background-color: #333;
+  border: 1px red solid;
+  border-radius: 10px;
 }
 
-// .about-logos img {
-//   background-color: #f4f4f4;
-// }
+#about-c {
+  background-color: #3333;
+}
+
+.about-logos {
+  background-color: #fff;
+  border-radius: 20px;
+}
 
 .about-logos img.sec-pic {
   margin-top: 20px;
 }
 
+.social a {
+  color: #fff;
+}
+
+// About -page
+.bio h4 {
+  background-color: rgb(231, 225, 225);
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.bio p {
+  margin-top: 70px;
+  background-color: rgb(243, 241, 241);
+  border-radius: 20px;
+  // color: #fff;
+}
 // Import Media Queries
 @import "media";
