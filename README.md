@@ -1,1 +1,1 @@
-# My-Portfolio
+This is my Portfolio website. Here, I will tell a little about myself and the projects I have built. I have not added my resume. However, you can contact me using the contact form. My resume is also available on the GitHub repo.
